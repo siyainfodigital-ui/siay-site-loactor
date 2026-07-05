@@ -1,0 +1,68 @@
+name: siyasitelocator
+description: "Siya Site Locator - Solar Field Management App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  get: ^4.6.6
+
+  # Supabase (Free plan)
+  supabase_flutter: ^2.5.6
+
+  # GPS only — no map UI needed
+  geolocator: ^13.0.2
+
+  # Camera & Image
+  image_picker: ^1.1.2
+
+  # File picker & bulk upload
+  file_picker: ^8.1.2
+  csv: ^6.0.0
+  excel: ^4.0.6
+
+  # Local cache (offline support)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.3
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+
+  # Utils
+  flutter_dotenv: ^5.2.1
+  url_launcher: ^6.3.1
+  intl: ^0.20.2
+  share_plus: ^10.0.2
+  permission_handler: ^11.3.1
+  path: ^1.9.0
+  uuid: ^4.4.2
+
+  # Icons
+  cupertino_icons: ^1.0.8
+  image: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - .env
